@@ -17,6 +17,6 @@ development:
   encoding: unicode
   database: FoodTruck_app_development
   pool: 5
-  username: Jeivar
+  username: camilacano
   password:
   host: localhost
