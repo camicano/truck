@@ -1,0 +1,7 @@
+<h1>add a new truck!</h1>
+
+<%= form_for @truck do |f| %>
+<%= f.text_field :name %>
+<%= f.text_field :type_of_food %>
+<%= f.submit("add") %>
+<% end %>

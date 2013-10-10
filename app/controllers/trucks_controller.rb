@@ -6,9 +6,13 @@ class TrucksController < ApplicationController
 	end
 
 	def new
+		@truck = Truck.new
 	end
 
 	def create
+		@truck = Truck.create(params[:truck])
+
+		redirect_to trucks_path
 	end
 
 	def edit
@@ -18,5 +22,9 @@ class TrucksController < ApplicationController
 	end
 
 	def destroy
+		@truck = Truck.find(params[:id])
+		@truck.destroy
+
+		redirect_to trucks_path
 	end
 end
