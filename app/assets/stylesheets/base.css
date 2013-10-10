@@ -57,7 +57,7 @@
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }
- 	.flotador {background: rgba(0,0,0,0.7);}
+ 	.bigbox {background: rgba(0,0,0,0.7);}
 
 /* #Typography
 ================================================== */
