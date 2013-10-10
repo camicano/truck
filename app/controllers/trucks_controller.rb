@@ -31,10 +31,9 @@ class TrucksController < ApplicationController
 	end
 
 	def update
-		@truck = Truck.find(params[:id])
-		if @truck.update(params[:truck])
-			redirect_to truck_path(@truck)
-		end
+		@truck = Truck.update(params[:id], params[:truck])
+
+		redirect_to truck_path(@truck)
 	end
 
 	def destroy
