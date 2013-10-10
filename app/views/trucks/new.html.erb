@@ -1,16 +1,19 @@
 <div class="container bigbox">
 	<div class="sixteen columns">
+		<div class="eight columns">
+			<h1>Add a new truck!</h1>
+		</div>
 
-		<h1>Add a new truck!</h1>
-	</hr>
+			<%= form_for @truck do |f| %>
 
-
-<%= form_for @truck do |f| %>
-<%= f.text_field :name %>
-<%= f.text_field :type_of_food %>
-<%= f.submit("add") %>
-<% end %>
-
-</div>
-	
+		<div class="eight columns">
+			<ul>
+				<%= f.text_field :name %>
+				<%= f.text_field :type_of_food %>
+			</br>
+				<%= f.submit("add") %>
+			<% end %>
+			</ul>
+		</div>
+	</div>
 </div>
