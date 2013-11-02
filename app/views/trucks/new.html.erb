@@ -4,16 +4,17 @@
 			<h1>Add a new truck!</h1>
 		</div>
 
-			<%= form_for @truck do |f| %>
+		<%= form_for @truck do |f| %>
 
-		<div class="eight columns">
-			<ul>
-				<%= f.text_field :name %>
-				<%= f.text_field :type_of_food %>
-			</br>
-				<%= f.submit("add") %>
-			<% end %>
-			</ul>
-		</div>
+			<div class="eight columns">
+				<ul>
+					<%= f.text_field :name %>
+					<%= f.text_field :type_of_food %>
+				</br>
+			
+					<%= f.submit("add") %>
+				</ul>
+			</div>
+		<% end %>
 	</div>
 </div>

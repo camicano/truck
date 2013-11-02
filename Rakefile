@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-FoodTruckApp::Application.load_tasks
+FoodtruckApp::Application.load_tasks

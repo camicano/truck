@@ -1,13 +1,4 @@
 class TrucksController < ApplicationController
-# 	    trucks GET    /trucks(.:format)          trucks#index
-#            POST   /trucks(.:format)          trucks#create
-#  new_truck GET    /trucks/new(.:format)      trucks#new
-# edit_truck GET    /trucks/:id/edit(.:format) trucks#edit
-#      truck GET    /trucks/:id(.:format)      trucks#show
-#            PUT    /trucks/:id(.:format)      trucks#update
-#            DELETE /trucks/:id(.:format)      trucks#destroy
-#       root        /                          trucks#index
-
 	def index
 		@trucks = Truck.all
 	end

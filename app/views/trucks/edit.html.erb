@@ -1,12 +1,10 @@
 <h1>Edit truck!</h1>
 
 <%= form_for @truck do |f| %>
-<%= f.text_field :name %>
-<%= f.text_field :type_of_food %>
-<%= f.submit("edit") %>
+	<%= f.text_field :name %>
+	<%= f.text_field :type_of_food %>
+	<%= f.submit("edit") %>
 <% end %>
-
-
 
 <%= button_to "delete", {:controller => :trucks,
       :action => 'destroy', :id => @truck.id }, :method => :delete %>
